@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void Update()//camera controlling 
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {

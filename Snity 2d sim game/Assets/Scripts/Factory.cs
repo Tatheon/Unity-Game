@@ -10,11 +10,11 @@ public class Factory : Building
     public GameObject rangedFab;
     public GameObject meleeFab;
 
-    private readonly float offsetY = 3f;
+    private readonly float offsetY = 3f;//info for helth being shown
     private TextMeshPro myText;
     GameObject healthPop;
 
-    private void Start()
+    private void Start()// setup of object
     {
         health = 40;
         maxHealth = 40;

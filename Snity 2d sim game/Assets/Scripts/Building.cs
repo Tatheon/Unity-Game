@@ -15,7 +15,7 @@ public class Building : MonoBehaviour
     public float nextTimeToInteract = 0;
 
 
-    public int Health
+    public int Health//basic proerties
     {
         get { return health; }
         set { health = value; }
@@ -32,7 +32,7 @@ public class Building : MonoBehaviour
         set { team = value; }
     }
 
-    public void KillIfGameover()
+    public void KillIfGameover()//if the game is over then it has no putpose being on the game area, and helps to clean up the game for next round
     {
         if (gameMannager.IsGameOver)
         {
