@@ -30,8 +30,8 @@ public class Factory : Building
     {
         healthPop.transform.position = transform.position + offset;
         myText.text = health + " / " + maxHealth;
-        KillIfGameover();
-        if (Time.time >= nextTimeToInteract)
+        KillIfGameover();//clean up operation
+        if (Time.time >= nextTimeToInteract)//controlls whan a unit will be made
         {
             nextTimeToInteract = Time.time + 1f / interactionTime;
             if (team == "Green")
@@ -53,7 +53,7 @@ public class Factory : Building
         }
     }
 
-    public void MakeUnit()
+    public void MakeUnit()//where the magic happens
     {
         int unitType = (int)Random.Range(0f,1f);
         if (unitType == 0)
